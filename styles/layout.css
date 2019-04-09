@@ -2,7 +2,7 @@
 /* Apply to elements such as header, footer, nav, aside */
 /* Classes and IDs can be included here. */
 
-
+/* Mobile Version */
 
 .a {
   width: 480px;
@@ -76,8 +76,10 @@
   background-color: seagreen;
 }
 
+/* Desktop Version */
+
 @media (min-width: 768px) {
-  nav, artical, footer {
+  body {
     width: 960px;
   }
 

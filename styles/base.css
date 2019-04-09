@@ -3,8 +3,8 @@
 /* Examples include styling of overall font and background color. */
 
 body {
-  margin:    0 auto;
-  max-width: 960px;
+  margin: 0 auto;
+  width: 480px;
   background-color: black;
 }
 
@@ -12,3 +12,8 @@ div {
   float: left;
 }
 
+@media (min-width: 768px) {
+  body {
+    width: 960px;
+  }
+}
