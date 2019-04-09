@@ -2,12 +2,14 @@
 /* Apply to elements such as header, footer, nav, aside */
 /* Classes and IDs can be included here. */
 
+
+
 .a {
   width: 480px;
   height: 75px;
   text-align: center;
   line-height: 75px;
-  border: .5px solid grey;
+  background-color: goldenrod;
 }
 
 .b {
@@ -15,7 +17,7 @@
   height: 150px;
   text-align: center;
   line-height: 150px;
-  border: .5px solid grey;
+  background-color: royalblue;
 }
 
 .c {
@@ -23,7 +25,7 @@
   height: 125px;
   text-align: center;
   line-height: 125px;
-  border: .5px solid grey;
+  background-color: burlywood;
 }
 
 .d {
@@ -31,75 +33,51 @@
   height: 125px;
   text-align: center;
   line-height: 125px;
-  border: .5px solid grey;
+  background-color: lightblue;
 }
 
 .e {
-  float: left;
   text-align: center;
   line-height: 250px;
   width: 240px;
   height: 250px;
-  border: .5px solid grey;
+  background-color: cyan;
 }
 
 .f {
-  float: right;
   text-align: center;
   line-height: 250px;
   width: 240px;
   height: 250px;
-  border: .5px solid grey;
+  background-color: firebrick;
 }
 
 .g {
-  float: left;
   text-align: center;
   line-height: 250px;
   width: 240px;
   height: 250px;
-  border: .5px solid grey;
+  background-color: honeydew;
 }
 
 .h {
-  float: right;
   text-align: center;
   line-height: 250px;
   width: 240px;
   height: 250px;
-  border: .5px solid gray;
+  background-color: coral;
 }
 
 .i {
-  position: absolute;
   text-align: center;
   line-height: 80px;
   width: 480px;
   height: 80px;
-  bottom: 0;
-  border: .5px solid gray;
-}
-
-@media (min-width: 480px) {
-  nav, artical, footer {
-    width: 767px;
-  }
-
-  body {
-    width: 480px;
-  }
-
-  div, li {
-    background-color: lightgrey;
-  }
+  background-color: seagreen;
 }
 
 @media (min-width: 768px) {
   nav, artical, footer {
-    width: 960px;
-  }
-
-  body{
     width: 960px;
   }
 
@@ -108,7 +86,7 @@
     height: 100px;
     text-align: center;
     line-height: 100px;
-    border: .5px solid grey;
+    background-color: wheat;
   }
   
   .b {
@@ -117,7 +95,7 @@
     height: 600px;
     text-align: center;
     line-height: 600px;
-    border: .5px solid grey;
+    background-color: teal;
   }
   
   .c {
@@ -126,7 +104,7 @@
     height: 200px;
     text-align: center;
     line-height: 200px;
-    border: .5px solid grey;
+    background-color: yellowgreen;
   }
   
   .d {
@@ -135,60 +113,51 @@
     height: 200px;
     text-align: center;
     line-height: 200px;
-    border: .5px solid grey;
+    background-color: indianred;
   }
   
-  ul > .e {
-    clear: both;
-    display: inline-block;
+  .e {
+    float: left;
     text-align: center;
     line-height: 250px;
     width: 190px;
     height: 250px;
-    border: .5px solid grey;
+    background-color: orange;
   }
   
-  ul > .f {
-    clear: both;
-    display: inline-block;
+  .f {
+    float: left;
     text-align: center;
     line-height: 250px;
     width: 190px;
     height: 250px;
-    border: .5px solid grey;
+    background-color: powderblue;
   }
   
-  ul > .g {
-    clear: both;
-    display: inline-block;
+  .g {
+    float: left;
     text-align: center;
     line-height: 250px;
     width: 190px;
     height: 250px;
-    border: .5px solid grey;
+    background-color: aquamarine;
   }
   
-  ul > .h {
-    clear: both;
-    display: inline-block;
+  .h {
+    float: left;
     text-align: center;
     line-height: 250px;
     width: 190px;
     height: 250px;
-    border: .5px solid gray;
+    background-color: darkcyan;
   }
   
   .i {
-    position: absolute;
     text-align: center;
     line-height: 150px;
     width: 760px;
     height: 150px;
-    bottom: 0;
-    border: .5px solid gray;
+    background-color: khaki;
   }
 
-  div, li{
-    background-color: cyan; 
-  }
 }

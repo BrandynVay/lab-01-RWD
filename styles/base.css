@@ -2,8 +2,13 @@
 /* Apply to elements such as body and main */
 /* Examples include styling of overall font and background color. */
 
-* {
-  box-sizing: border-box;
+body {
+  margin:    0 auto;
+  max-width: 960px;
+  background-color: black;
 }
 
+div {
+  float: left;
+}
 
