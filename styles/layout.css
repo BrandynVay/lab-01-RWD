@@ -2,164 +2,225 @@
 /* Apply to elements such as header, footer, nav, aside */
 /* Classes and IDs can be included here. */
 
-/* Mobile Version */
-
-.a {
+div {
   width: 480px;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
+  height: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 7.1090047393% 14.2180094786% 11.8483412322% 11.8483412322% 23.6966824644% 23.6966824644% 7.5829383886%;
+}
+
+header, aside, section, footer {
+  grid-column-start: span 2;
+}
+
+header {
+  grid-row-start: 1;
+}
+
+aside {
+  grid-row-start: 2;
+}
+
+section {
+  grid-row-start: 3;
+}
+
+section:nth-child(4) {
+  grid-row-start: 4;
+}
+
+article {
+  grid-column-start: 1;
+  grid-row-start: 5; 
+}
+
+article:nth-child(6) {
+  grid-column-start: 2;
+  grid-row-start: 5; 
+}
+
+article:nth-child(7), article:nth-child(8)  {
+  grid-row-start: 6;
+}
+
+article:nth-child(7) {
+  grid-column-start: 1;
+}
+
+article:nth-child(8) {
+  grid-column-start: 2;
+}
+
+footer {
+  grid-row-start: 7;
+}
+
+/* Tablet/ Desktop View */
+@media only screen and (min-width: 768px) {
+  div {
+    width: 960px;
+    height: 768px;
+    margin: 100px auto;
+    grid-template-columns: 20.8333333333% 19.7916666666% 19.7916666666% 19.7916666666% 19.7916666666%;
+    grid-template-rows: 14.2857142857% 28.5714285714% 35.7142857142% 21.4285714285%;
+  }
+
+  header {
+    grid-column-start: span 5;
+  }
+
+  aside {
+    grid-column-start: 1;
+    grid-row: 2 / 5;
+  }
+
+  section, section:nth-child(4) {
+    grid-row-start: 2;
+  }
+
+  section:nth-child(4) {
+    grid-column: 4 / 6;
+  }
+
+  article, article:nth-child(6), article:nth-child(7), article:nth-child(8) {
+    grid-row-start: 3;
+  }
+
+  article {
+    grid-column-start: 2;
+  }
+
+  article:nth-child(6) {
+    grid-column-start: 3;
+  }
+
+  article:nth-child(7) {
+    grid-column-start: 4;
+  }
+
+  article:nth-child(8) {
+    grid-column-start: 5;
+  }
+
+  footer {
+    grid-column: 2 / 6;
+    grid-row-start: 4;
+  }
+}
+
+/* Mobile View */
+header {
+  background-color: red;
+}
+
+aside {
+  background-color: blue;
+}
+
+section {
+  background-color: green;
+}
+
+section:nth-child(4) {
   background-color: goldenrod;
 }
 
-.b {
-  width: 480px;
-  height: 150px;
-  text-align: center;
-  line-height: 150px;
-  background-color: royalblue;
+article {
+  background-color: skyblue;
 }
 
-.c {
-  width: 480px;
-  height: 125px;
-  text-align: center;
-  line-height: 125px;
-  background-color: burlywood;
-}
-
-.d {
-  width: 480px;
-  height: 125px;
-  text-align: center;
-  line-height: 125px;
-  background-color: lightblue;
-}
-
-.e {
-  text-align: center;
-  line-height: 250px;
-  width: 240px;
-  height: 250px;
+article:nth-child(6) {
   background-color: cyan;
 }
 
-.f {
-  text-align: center;
-  line-height: 250px;
-  width: 240px;
-  height: 250px;
-  background-color: firebrick;
+article:nth-child(7) {
+  background-color: orange;
 }
 
-.g {
-  text-align: center;
-  line-height: 250px;
-  width: 240px;
-  height: 250px;
-  background-color: honeydew;
+article:nth-child(8) {
+  background-color: ivory;
 }
 
-.h {
-  text-align: center;
-  line-height: 250px;
-  width: 240px;
-  height: 250px;
-  background-color: coral;
+footer {
+  background-color: lightgreen;
 }
 
-.i {
-  text-align: center;
-  line-height: 80px;
-  width: 480px;
-  height: 80px;
-  background-color: seagreen;
-}
-
-/* Desktop Version */
-
-@media (min-width: 768px) {
-  body {
-    width: 960px;
-  }
-
-  .a {
-    width: 960px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+  header {
     background-color: wheat;
   }
   
-  .b {
-    float: left;
-    width: 200px;
-    height: 600px;
-    text-align: center;
-    line-height: 600px;
-    background-color: teal;
+  aside {
+    background-color: indigo;
   }
   
-  .c {
-    float: left;
-    width: 380px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    background-color: yellowgreen;
+  section {
+    background-color: orangered;
   }
   
-  .d {
-    float: left;
-    width: 380px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    background-color: indianred;
+  section:nth-child(4) {
+    background-color: peachpuff;
   }
   
-  .e {
-    float: left;
-    text-align: center;
-    line-height: 250px;
-    width: 190px;
-    height: 250px;
+  article {
+    background-color: seagreen;
+  }
+  
+  article:nth-child(6) {
+    background-color: crimson;
+  }
+  
+  article:nth-child(7) {
+    background-color: cyan;
+  }
+  
+  article:nth-child(8) {
+    background-color: burlywood;
+  }
+  
+  footer {
+    background-color: honeydew;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 960px) {
+  header {
+    background-color: ivory;
+  }
+  
+  aside {
     background-color: orange;
   }
   
-  .f {
-    float: left;
-    text-align: center;
-    line-height: 250px;
-    width: 190px;
-    height: 250px;
-    background-color: powderblue;
+  section {
+    background-color: whitesmoke;
   }
   
-  .g {
-    float: left;
-    text-align: center;
-    line-height: 250px;
-    width: 190px;
-    height: 250px;
+  section:nth-child(4) {
     background-color: aquamarine;
   }
   
-  .h {
-    float: left;
-    text-align: center;
-    line-height: 250px;
-    width: 190px;
-    height: 250px;
-    background-color: darkcyan;
+  article {
+    background-color: silver;
   }
   
-  .i {
-    text-align: center;
-    line-height: 150px;
-    width: 760px;
-    height: 150px;
+  article:nth-child(6) {
+    background-color: firebrick;
+  }
+  
+  article:nth-child(7) {
     background-color: khaki;
   }
-
+  
+  article:nth-child(8) {
+    background-color: midnightblue;
+  }
+  
+  footer {
+    background-color: navajowhite;
+  }
 }

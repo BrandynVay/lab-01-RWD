@@ -2,18 +2,18 @@
 /* Apply to elements such as body and main */
 /* Examples include styling of overall font and background color. */
 
+
 body {
-  margin: 0 auto;
-  width: 480px;
   background-color: black;
 }
 
-div {
-  float: left;
+header, aside, section, article, footer {
+  outline: 1px solid black;
 }
 
-@media (min-width: 768px) {
-  body {
-    width: 960px;
-  }
+p {
+  position: relative;
+  text-align: center;
+  top: 50%;
 }
+
